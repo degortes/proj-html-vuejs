@@ -80,8 +80,8 @@ header li:hover {
     bottom: 12px;
 }
 .jumbutton {
-    position: relative;
-    bottom: 40px;
+    position: absolute;
+    bottom: 20px;
 }
 
 #learn-more {
