@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+.logo img {
+    height: 120px;
+}
+
+header li img {
+    margin-bottom: 10px;
+}
+
+header li:hover img {
+    object-position: 0 -33px;
+}
+header li p {
+    margin-bottom: 15px;
+}
+
+header li:hover {
+    background-color: #fe6601;
+}
+
+.nav-img {
+    height: 33px;
+    margin-top: 32px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.welcome-slider {
+    background-image: url('images/slider_slide3_background.png');
+    height: 600px;
+}
+.right-cont, .left-cont {
+    position: relative;
+    height: 600px;
+}
+
+.right-cont img {
+    position: absolute;
+    bottom: 50px;
+    left: calc(50%);
+    transform: translate(- 50%);
+}
+
+.left-cont img {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+
+}
