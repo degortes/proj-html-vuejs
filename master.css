@@ -34,6 +34,11 @@ header li:hover {
     margin-bottom: 16px;
 }
 
+#jumbo .container {
+    position: relative;
+    height: 600px;
+}
+
 .welcome-slider {
     background-image: url('images/slider_slide3_background.png');
     height: 600px;
@@ -47,12 +52,55 @@ header li:hover {
     position: absolute;
     bottom: 50px;
     left: calc(50%);
-    transform: translate(- 50%);
+    transform: translate(50%);
 }
 
 .left-cont img {
     position: absolute;
     bottom: 50px;
-    right: 0;
+    right: 40px;
 
+}
+.cursive {
+    font-family: 'Handlee', cursive;
+    font-size: 38px;
+    margin-top: 160px;
+    color: #d7ac95;
+    opacity: 0.2;
+}
+.minibut {
+    display: inline-block;
+    width: 40px;
+    height: 12px;
+    border: 2px solid #fe6601;
+    margin: 0 5px;
+}
+.minibut.last {
+    position: relative;
+    bottom: 12px;
+}
+.jumbutton {
+    position: relative;
+    bottom: 40px;
+}
+
+#learn-more {
+    height: 130px;
+    background-image: url('images/pattern.png');
+}
+#learn-more h2 {
+    padding: 30px 0;
+    color: white;
+    font-size: 30px;
+}
+.right-learn {
+    padding: 30px 0;
+}
+.btn-white {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
 }
