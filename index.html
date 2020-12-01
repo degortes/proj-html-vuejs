@@ -15,12 +15,12 @@
         <div id="root">
             <header>
                 <div class="container">
-                    <div class="logo  col-offset-1 col-3">
+                    <div class="logo  col-3">
                         <img src="images/logo.png" alt="">
                     </div>
                     <nav class="menu-item">
                         <ul>
-                            <li v-for="item in navMenu" class=" text-center col-1">
+                            <li v-for="item in navMenu" class=" text-center">
                                 <div class="nav-img">
                                     <img :src="'images/'+item.img + '.png'" alt="">
                                 </div>
@@ -31,34 +31,198 @@
                 </div>
             </header>
             <section id="jumbo">
-                <div class="welcome-slider">
-                    <div class="container">
-                        <div class="left-cont col-7 text-center">
-                            <h1 class=" col-offset-2 col-10 cursive text-left">Learning & Fun</h1>
-                            <img src="images/slider_slide3_img2.png"alt="">
-                        </div>
-                        <div class="right-cont col-5 text-center text-left">
-                            <img  src="images/slider_slide3_img3.png" alt="">
-                        </div>
-                        <div class="col-12 text-center jumbutton">
-                            <button class=" minibut" type="button" name="button"></button>
-                            <button class=" minibut" type="button" name="button"></button>
-                            <button class=" minibut last" type="button" name="button"></button>
-                        </div>
-
+                <div class="container">
+                    <div class="left-cont col-7">
+                        <h1 class="col-12 cursive text-left">Learning & Fun</h1>
+                        <img src="images/slider_slide3_img2.png"alt="">
+                    </div>
+                    <div class="right-cont col-5 text-left">
+                        <img  src="images/slider_slide3_img3.png" alt="">
+                    </div>
+                    <div class="col-12 text-center jumbutton">
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut last" type="button" name="button"></button>
                     </div>
                 </div>
 
             </section>
-            <section id="learn-more">
+            <section id="learn-more" class="banner">
                 <div class="container">
-                    <div class="left-learn col-6 col-offset-1">
-                        <h2 >How to Enroll Your Child a Class?</h2>
-                    </div>
-                    <div class=" text-center right-learn col-5">
-                        <button class="btn btn-white"type="button" name="button">Learn more</button>
+                    <div class="col-12">
+                        <div class="left-learn col-9 col">
+                            <h3 >How to Enroll Your Child a Class?</h2>
+                        </div>
+                        <div class=" text-right right-learn col-3">
+                            <button class="btn btn-white"type="button" name="button">Learn more</button>
+                        </div>
+
                     </div>
                 </div>
+            </section>
+            <section id="welcome-to">
+                <div class="container">
+                    <div class="col-12 text-center main-welcome">
+                        <h2>Welcome to Fable</h2>
+                        <p>Fable daycare, preschool and kinderganten</p>
+                        <img src="images/header_divider.png" alt="">
+                    </div>
+                    <div class="col-3 text-center round-card">
+                        <div class="img-welcome">
+                            <img src="images/schoolbag_alt.png" alt="">
+                        </div>
+                        <h4>Morbi Etos</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                    <div class="col-3 text-center round-card">
+                        <div class="img-welcome dark">
+                            <img src="" alt="">
+                        </div>
+                        <h4>Morbi Etos</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                    <div class="col-3 text-center round-card">
+                        <div class="img-welcome">
+                            <img src="" alt="">
+                        </div>
+                        <h4>Morbi Etos</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                    <div class="col-3 text-center round-card">
+                        <div class="img-welcome dark">
+                            <img src="" alt="">
+                        </div>
+                        <h4>Morbi Etos</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="overview">
+                <div class="container">
+                    <div class="col-6">
+                        <div class="col-12">
+                            <a href="#">Overview</a>
+                            <a href="#">Our Mission</a>
+                        </div>
+                        <div class="col-12">
+                            <h3>
+                                Our philosophy is learning through play as we offer a stimulating enviroment for children
+                            </h3>
+                        </div>
+                        <div class="col-12">
+                            <div class="icon-overview f-left" >
+                                <img src="images/clock_alt.png" alt="">
+                            </div>
+                            <h4>Full Day Session</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                        </div>
+                        <div class="col-12">
+                            <div class="icon-overview f-left">
+                                <img src="" alt="">
+                            </div>
+                            <h4>Full Day Session</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                        </div>
+                    </div>
+                    <div class="col-6 text-center">
+                        <div class="col-12 main-img-overview">
+                            <img src="images/gallery_01-690x506.jpg" alt="">
+                        </div>
+                        <div class="col-4 img-overview">
+                            <img src="images/gallery_01-690x506.jpg" alt="">
+                        </div>
+                        <div class="col-4 img-overview">
+                            <img src="images/gallery_01-690x506.jpg" alt="">
+                        </div>
+                        <div class="col-4 img-overview">
+                            <img src="images/gallery_01-690x506.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="our-numbers">
+                <div class="container">
+                    <div class="col-3">
+                        <div class="number-cont">
+                            <span>507</span>
+                        </div>
+                        <h4>Our Pupils</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="number-cont">
+                            <span>507</span>
+                        </div>
+                        <h4>Our Pupils</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="number-cont">
+                            <span>507</span>
+                        </div>
+                        <h4>Our Pupils</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="number-cont">
+                            <span>507</span>
+                        </div>
+                        <h4>Our Pupils</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
+
+                    </div>
+                    <div class="col-12 relative text-center">
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut" type="button" name="button"></button>
+                        <button class=" minibut last" type="button" name="button"></button>
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="our-classes">
+                <div class="container">
+                    <div class="col-12 text-center">
+                        <h2>Our Classes</h2>
+                        <p>dfkd hfuisd uihsdf duish </p>
+                        <img src="images/header_divider.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <p>fdgdf hfdh fdh fgh fgh fgh  dfh dfghdfghdfg dfgdf</p>
+                    </div>
+                    <div class="col-6">
+                        <p>trfytdty tdhghdyht rtyhrt reryhy ef dfghfhfg </p>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-6">
+                            <h4>Little Lambs</h4>
+                            <p>Class Name</p>
+
+                        </div>
+                        <div class="col-3">
+                            <h5>12-24</h5>
+                            <p>Month olds</p>
+                        </div>
+                        <div class="col-3">
+                            <h5>9</h5>
+                            <p>Classes</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="img-class">
+                            <img src="" alt="">
+                        </div>
+                        <button type="button" name="button">Read More</button>
+                    </div>
+                </div>
+
             </section>
         </div>
         <script src="main.js" charset="utf-8"></script>

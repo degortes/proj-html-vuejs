@@ -2,6 +2,13 @@
     float: left;
 }
 
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+
 .text-center {
     text-align: center;
 }
@@ -19,6 +26,11 @@
 }
 
 .container::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+section.container::after {
     content:"";
     display: table;
     clear: both;
