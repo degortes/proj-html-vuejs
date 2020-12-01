@@ -67,34 +67,17 @@
                         <p>Fable daycare, preschool and kinderganten</p>
                         <img src="images/header_divider.png" alt="">
                     </div>
-                    <div class="col-3 text-center round-card">
-                        <div class="img-welcome">
-                            <img src="images/schoolbag_alt.png" alt="">
-                        </div>
-                        <h4>Morbi Etos</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
-                    <div class="col-3 text-center round-card">
-                        <div class="img-welcome dark">
-                            <img src="" alt="">
-                        </div>
-                        <h4>Morbi Etos</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
-                    <div class="col-3 text-center round-card">
-                        <div class="img-welcome">
-                            <img src="" alt="">
-                        </div>
-                        <h4>Morbi Etos</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
-                    <div class="col-3 text-center round-card">
-                        <div class="img-welcome dark">
-                            <img src="" alt="">
-                        </div>
-                        <h4>Morbi Etos</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    </div>
+                    <ul v-for="(item, index) in welcome"class="col-3 text-center round-card">
+                        <li class="img-welcome" :class="index%2? 'dark' : null">
+                            <img :src="'images/'+ item.img +'.png'" alt="">
+                        </li>
+                        <li>
+                            <h4>{{item.title}}</h4>
+                        </li>
+                        <li>
+                            <p>{{item.content}}</p>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section id="overview">
@@ -106,7 +89,7 @@
                         </div>
                         <div class="col-12">
                             <h3>
-                                Our philosophy is learning through play as we offer a stimulating enviroment for children
+                                Our philosophy is learning through play as we offer a stimulating enviroment for children Our philosophy is learning through play as we offer a stimulating enviroment for children
                             </h3>
                         </div>
                         <div class="col-12">
@@ -125,13 +108,17 @@
                         </div>
                     </div>
                     <div class="col-6 text-center">
-                        <div class="col-12 main-img-overview">
+                        <div class="col-12 main-img-overview relative">
                             <img src="images/gallery_01-690x506.jpg" alt="">
+                            <div class="slider-buttons">
+                                <a class="f-left" href="#"><</a>
+                                <a class="f-right" href="#">></a>
+                            </div>
                         </div>
                         <div class="col-4 img-overview">
                             <img src="images/gallery_01-690x506.jpg" alt="">
                         </div>
-                        <div class="col-4 img-overview">
+                        <div class="col-4 img-overview active">
                             <img src="images/gallery_01-690x506.jpg" alt="">
                         </div>
                         <div class="col-4 img-overview">
@@ -142,41 +129,19 @@
 
             </section>
             <section id="our-numbers">
-                <div class="container">
-                    <div class="col-3">
-                        <div class="number-cont">
-                            <span>507</span>
-                        </div>
-                        <h4>Our Pupils</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="number-cont">
-                            <span>507</span>
-                        </div>
-                        <h4>Our Pupils</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="number-cont">
-                            <span>507</span>
-                        </div>
-                        <h4>Our Pupils</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
-
-                    </div>
-                    <div class="col-3">
-                        <div class="number-cont">
-                            <span>507</span>
-                        </div>
-                        <h4>Our Pupils</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .</p>
-
-                    </div>
-                    <div class="col-12 relative text-center">
-                        <button class=" minibut" type="button" name="button"></button>
+                <div class="container text-center">
+                    <ul class="col-3" v-for="item in myNumbers">
+                        <li class="number-cont">
+                            <span>{{item.num}}</span>
+                        </li>
+                        <li>
+                            <h4>{{item.title}}</h4>
+                        </li>
+                        <li>
+                            <p>{{item.content}}</p>
+                        </li>
+                    </ul>
+                    <div class="col-12 text-center">
                         <button class=" minibut" type="button" name="button"></button>
                         <button class=" minibut" type="button" name="button"></button>
                         <button class=" minibut" type="button" name="button"></button>
@@ -185,7 +150,6 @@
                     </div>
 
                 </div>
-
             </section>
             <section id="our-classes">
                 <div class="container">
@@ -194,33 +158,177 @@
                         <p>dfkd hfuisd uihsdf duish </p>
                         <img src="images/header_divider.png" alt="">
                     </div>
-                    <div class="col-6">
-                        <p>fdgdf hfdh fdh fgh fgh fgh  dfh dfghdfghdfg dfgdf</p>
-                    </div>
-                    <div class="col-6">
-                        <p>trfytdty tdhghdyht rtyhrt reryhy ef dfghfhfg </p>
-                    </div>
-                    <div class="col-6">
-                        <div class="col-6">
-                            <h4>Little Lambs</h4>
-                            <p>Class Name</p>
+                    <div class="col-12">
 
+                        <div class="col-6">
+                            <p class="big-para">We provided four classes with nine to twenty children each aged twelve month to five years of age.</p>
                         </div>
-                        <div class="col-3">
-                            <h5>12-24</h5>
-                            <p>Month olds</p>
+                        <div class="col-6">
+                            <p class="small-para">Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.</p>
                         </div>
-                        <div class="col-3">
-                            <h5>9</h5>
-                            <p>Classes</p>
+                    </div>
+                    <div class="card-container">
+
+                        <div class="col-6 card-dark">
+                            <div class="col-6 back-card">
+                                <div class="padding20">
+                                    <h4>Little Lambs</h4>
+                                    <p class="  title-class">Class Name</p>
+
+                                </div>
+
+                                <div class="col-6 text-center">
+                                    <h5>12-24</h5>
+                                    <p>Month olds</p>
+                                </div>
+                                <div class="col-6 text-center separation">
+                                    <h5>9</h5>
+                                    <p>Classes</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-right">
+                                <div class="img-class relative">
+                                    <img src="images/class_01-690x506.jpg" alt="">
+                                    <a class="">Read More</a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-6 card-dark">
+                            <div class="col-6 back-card">
+                                <div class="padding20">
+                                    <h4>Little Lambs</h4>
+                                    <p class="  title-class">Class Name</p>
+
+                                </div>
+
+                                <div class="col-6 text-center">
+                                    <h5>12-24</h5>
+                                    <p>Month olds</p>
+                                </div>
+                                <div class="col-6 text-center separation">
+                                    <h5>9</h5>
+                                    <p>Classes</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-right">
+                                <div class="img-class relative">
+                                    <img src="images/class_01-690x506.jpg" alt="">
+                                    <a class="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 card-dark">
+                            <div class="col-6 back-card">
+                                <div class="padding20">
+                                    <h4>Little Lambs</h4>
+                                    <p class="  title-class">Class Name</p>
+
+                                </div>
+
+                                <div class="col-6 text-center">
+                                    <h5>12-24</h5>
+                                    <p>Month olds</p>
+                                </div>
+                                <div class="col-6 text-center separation">
+                                    <h5>9</h5>
+                                    <p>Classes</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-right">
+                                <div class="img-class relative">
+                                    <img src="images/class_01-690x506.jpg" alt="">
+                                    <a class="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="education">
+                <div class="container">
+                    <div class="col-6">
+                        <div class="col-12 big-para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                        </div>
+                        <div class="col-12 small-para">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+                        </div>
+                        <ul class="col-12">
+                            <li>
+                                <img src="" alt="">
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+                            <li>
+                                <p>fgjksdhgkjdfhgkhjkg</p>
+                            </li>
+
+                        </ul>
+
                     </div>
                     <div class="col-6">
-                        <div class="img-class">
-                            <img src="" alt="">
-                        </div>
-                        <button type="button" name="button">Read More</button>
+                            <ul class="col-6 text-center">
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <h4>Learning & fun</h4>
+                                </li>
+                                <li>
+                                    <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
+                                </li>
+                            </ul>
+                            <ul class="col-6 text-center">
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <h4>Learning & fun</h4>
+                                </li>
+                                <li>
+                                    <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
+                                </li>
+                            </ul>
+                            <ul class="col-6 text-center">
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <h4>Learning & fun</h4>
+                                </li>
+                                <li>
+                                    <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
+                                </li>
+                            </ul>
+                            <ul class="col-6 text-center">
+                                <li>
+                                    <img src="" alt="">
+                                </li>
+                                <li>
+                                    <h4>Learning & fun</h4>
+                                </li>
+                                <li>
+                                    <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
+                                </li>
+                            </ul>
+
+
                     </div>
+
                 </div>
 
             </section>

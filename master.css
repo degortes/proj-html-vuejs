@@ -10,8 +10,7 @@ a {
     color: white;
 }
 header, footer, section {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 ul {
@@ -29,9 +28,8 @@ h2 + p {
     margin-bottom: 10px;
 }
 
-h4 + p {
-    margin-bottom: 30px;
-    margin-top: 10px;
+h4 {
+    font-size: 20px;
 }
 
 .menu-item {
@@ -78,7 +76,7 @@ header li:hover {
 }
 
 .left-cont {
-    padding: 100px 0 250px 0;
+    padding: 200px 0 345px 0;
  }
 .right-cont {
     padding: 300px 0;
@@ -120,7 +118,9 @@ header li:hover {
     position: absolute;
     bottom: 20px;
 }
-
+#welcome-to {
+    padding-bottom: 50px;
+}
 #welcome-to .main-welcome {
     padding-bottom: 20px;
 }
@@ -166,10 +166,10 @@ header li:hover {
 
 #overview {
     background-color: lightgrey;
+    padding: 50px 0;
 }
 
-#overview a {
-    margin: 50px 0;
+section a {
     line-height: 40px;
     text-align: center;
     display: inline-block;
@@ -178,12 +178,16 @@ header li:hover {
     background-color: orange;
 }
 #overview h3 {
+    margin-top: 50px;
+
     color: blue;
     font-size: 22px;
     padding-bottom: 30px;
 }
 
 .icon-overview {
+    border-radius: 50%;
+    margin-bottom: 6px;
     margin-right: 20px;
     display: flex;
     align-items: center;
@@ -203,10 +207,114 @@ header li:hover {
     padding: 0 4px;
     width: 100%;
 }
-.img-overview img {
-    padding-top: 12px;
+.slider-buttons {
+    padding: 0 4px;
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#overview .slider-buttons a {
+    width: 50px;
+    margin: 0;
+}
+.img-overview img {
+    padding: 15px 0;
+    width: 100%;
+}
+.img-overview.active img {
+    border-bottom: 3px solid orange;
 }
 .relative {
     position: relative;
+}
+
+
+#our-numbers {
+    padding: 50px 0;
+    color: white;
+    background-image: url(images/parallax_01.jpg);
+    height: 427px;
+    background-position-y: -264px;
+    background-size: cover;
+}
+
+.number-cont {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.number-cont span {
+    font-size: 50px;
+}
+#our-numbers p {
+    margin: 20px 40px;
+}
+
+#our-numbers .relative {
+    top: 40px;
+}
+
+#our-classes h2 {
+    color: blue;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.big-para {
+    font-size: 30px;
+    color: purple;
+    padding-right: 10px;
+}
+.small-para {
+    padding-right: 10px;
+    color: grey;
+    font-size: 20px;
+}
+
+.card-dark {
+    padding-right: 20px;
+    margin-top: 50px;
+    color: white;
+}
+
+.title-class {
+    padding-bottom: 54px;
+}
+
+.separation {
+    border-left: 1px solid white;
+}
+
+.img-class img {
+    width: 100%;
+    display: inherit;
+}
+
+#our-classes a {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+#education {
+    background-color: lightgrey;
+}
+
+.back-card {
+    background-color: purple;
+    padding: 20px;
 }
