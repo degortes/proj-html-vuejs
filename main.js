@@ -81,17 +81,17 @@ var app = new Vue ({
         recentPost: [
             {
                 name: 'Drawing and Painting Lessons',
-                img: 'let',
+                img: 'blog_09-300x180',
                 date: 'October 03, 2014'
             },
             {
                 name: 'Drawing and Painting Lessons',
-                img: 'let',
+                img: 'blog_09-300x180',
                 date: 'October 03, 2014'
             },
             {
                 name: 'Drawing and Painting Lessons',
-                img: 'let',
+                img: 'blog_09-300x180',
                 date: 'October 03, 2014'
             }
         ]

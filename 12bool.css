@@ -1,7 +1,11 @@
 [class*="col-"] {
     float: left;
 }
-
+.fix::after {
+    content:"";
+    display: table;
+    clear: both;
+}
 .f-left {
     float: left;
 }
