@@ -3,17 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+
 }
 /* generali */
 
+
 p {
+    color: #707070;
     font-size: 18px;
 }
 a {
     text-decoration: none;
     color: white;
 }
-header, footer, section {
+footer, section {
     padding: 20px;
 }
 
@@ -31,15 +34,18 @@ h2 {
     padding: 50px 0 10px 0;
 }
 
-h2 + p {
-    color: #e8e6e7;
+h2 + p, .know-card p {
+    color: #707070;
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
     padding-bottom: 15px;
+    opacity: 0.6;
 
 }
-
+h3 {
+    font-size: 33px;
+}
 h4 {
     color: #4c4a9b;
     font-size: 25px;
@@ -123,7 +129,7 @@ header li:hover {
     margin: 0 5px;
 }
 
-.minibut.white {
+.minibut.bwhite {
     border: 2px solid white;
     background-color: transparent;
 }
@@ -137,38 +143,10 @@ header li:hover {
     position: absolute;
     bottom: 20px;
 }
-#welcome-to {
-    padding-bottom: 50px;
-}
-#welcome-to .main-welcome {
-    padding-bottom: 20px;
-}
 
-#welcome-to .round-card {
-    padding: 10px;
-}
-
-#welcome-to p {
-    padding: 0 15px;
-    opacity: 0.8;
-    color: #242423;
-}
-.img-welcome {
-    border-radius: 50%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 180px;
-    background-color: #fe6601;
-}
-
-.img-welcome.dark {
-    background-color: #4c4a9b;
-}
 
 .banner {
+    padding: 0;
     background-image: url('images/pattern.png');
 }
 .banner h3 {
@@ -184,10 +162,47 @@ header li:hover {
 .btn-white {
     text-transform: uppercase;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border: 1px solid white;
     background-color: transparent;
     outline: none;
+    font-size: 12px;
+}
+.btn-white:hover {
+    background-color: white;
+    color: #4c4a9b;
+}
+
+.fas {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+
+#welcome-to {
+    padding-bottom: 50px;
+}
+#welcome-to .main-welcome {
+    padding-bottom: 20px;
+}
+
+#welcome-to .round-card {
+    padding: 10px;
+}
+
+.img-welcome {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    background-color: #fe6601;
+}
+
+.img-welcome.dark {
+    background-color: #4c4a9b;
 }
 
 #overview {
@@ -196,19 +211,26 @@ header li:hover {
 }
 
 section a {
-    line-height: 40px;
+    width: 140px;
+    line-height: 60px;
     text-align: center;
     display: inline-block;
-    width: 100px;
-    height: 40px;
+    height: 60px;
     background-color: #fe6601;
+}
+
+.btn-opac {
+    margin-left: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid lightgrey;
+    color: #707070;
 }
 #overview h3 {
     margin-top: 50px;
     color: #4c4a9b;
-    font-size: 38px;
+    font-size: 35px;
     padding-bottom: 30px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .icon-overview {
@@ -218,8 +240,8 @@ section a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-color: #fe6601;
 }
 .img-overview {
@@ -241,12 +263,23 @@ section a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fe6601;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 #overview h4 {
     margin-top: 0;
 }
 #overview .slider-buttons a {
-    width: 50px;
+    width: 60px;
     margin: 0;
 }
 .img-overview img {
@@ -262,7 +295,7 @@ section a {
 
 
 #our-numbers {
-    padding: 80px 0;
+    padding: 50px 0;
     color: white;
     background-image: url(images/parallax_01.jpg);
     background-position-Y: center;
@@ -290,6 +323,7 @@ section a {
     font-size: 50px;
 }
 #our-numbers p {
+    color: white;
     margin: 20px 40px;
 }
 
@@ -305,11 +339,13 @@ section a {
 
 .big-para {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 33px;
     color: #554e9e;
     padding-right: 10px;
 }
 .small-para {
+    line-height: 1.6;
+    padding-bottom: 30px;
     padding-right: 10px;
     color: grey;
     font-size: 20px;
@@ -321,6 +357,10 @@ section a {
     color: white;
 }
 .card-dark h4 {
+    color: white;
+}
+
+.card-dark p {
     color: white;
 }
 
@@ -342,6 +382,9 @@ section a {
     position: absolute;
     bottom: 0px;
     right: 0;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
 }
 .class-title {
     padding-bottom: 80px;
@@ -352,6 +395,7 @@ section a {
 
 #education {
     background-color: #e8e6e7;
+    padding: 80px 0;
 }
 
 .back-card {
@@ -371,11 +415,23 @@ section a {
     color: #4c4a9b;
 }
 
+.edu-list {
+    padding-bottom: 16px;
+
+}
+
+.edu-list p {
+    font-size: 18px;
+    padding-left: 5px;
+    display: inline-block;
+}
+
 #gallery {
     padding: 0;
 }
 
 .photos img {
+    height: 300px;
     width: 100%;
 }
 #meet ul {
@@ -390,6 +446,8 @@ section a {
 }
 #meet a {
     width: 50px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .social-btn {
@@ -403,9 +461,9 @@ section a {
     margin: auto;
     width: 119px;
     border: 3px solid #fe6601;
-    position: absolute;
-    top: 46px;
-    left: 44%;
+    position: relative;
+    top: 79px;
+    left: 25px;
     padding: 6px;
 }
 #meet .quote img {
@@ -441,6 +499,7 @@ section a {
 }
 
 #kinder p {
+    color: white;
     padding: 0 0 30px 0;
 }
 
@@ -449,13 +508,41 @@ section a {
     margin-bottom: 20px;
 }
 
+.new-card a {
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+
 .new-card-img img {
     width: 100%;
+    display: block;
 }
 
 .end-new {
     padding-bottom: 20px;
     border-bottom: 1px solid grey;
+}
+
+.new-card div p {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.low-new a{
+    height: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.low-card {
+    padding: 15px 0;
 }
 #map {
     padding: 0;
@@ -491,6 +578,10 @@ footer h4 {
 }
 footer img {
     width: 100%;
+}
+
+footer p {
+    color: white;
 }
 
 .check {
