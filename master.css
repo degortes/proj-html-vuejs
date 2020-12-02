@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 /* generali */
+
+p {
+    font-size: 18px;
+}
 a {
     text-decoration: none;
     color: white;
@@ -21,16 +25,24 @@ ul {
 }
 
 h2 {
-    font-size: 35px;
+    font-weight: 300;
+    color: #4c4a9b;
+    font-size: 50px;
     padding: 50px 0 10px 0;
 }
 
 h2 + p {
+    color: #e8e6e7;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 15px;
+
 }
 
 h4 {
-    font-size: 20px;
+    color: #4c4a9b;
+    font-size: 25px;
     margin: 15px 0;
 }
 
@@ -111,6 +123,11 @@ header li:hover {
     margin: 0 5px;
 }
 
+.minibut.white {
+    border: 2px solid white;
+    background-color: transparent;
+}
+
 .minibut.last {
     position: relative;
     bottom: 12px;
@@ -130,25 +147,32 @@ header li:hover {
 #welcome-to .round-card {
     padding: 10px;
 }
+
+#welcome-to p {
+    padding: 0 15px;
+    opacity: 0.8;
+    color: #242423;
+}
 .img-welcome {
     border-radius: 50%;
     margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 140px;
-    height: 140px;
-    background-color: orange;
+    width: 180px;
+    height: 180px;
+    background-color: #fe6601;
 }
 
 .img-welcome.dark {
-    background-color: blue;
+    background-color: #4c4a9b;
 }
 
 .banner {
     background-image: url('images/pattern.png');
 }
 .banner h3 {
+    font-weight: 300;
     color: white;
     font-size: 30px;
     padding: 30px 0;
@@ -167,7 +191,7 @@ header li:hover {
 }
 
 #overview {
-    background-color: lightgrey;
+    background-color: #e8e6e7;
     padding: 50px 0;
 }
 
@@ -177,14 +201,14 @@ section a {
     display: inline-block;
     width: 100px;
     height: 40px;
-    background-color: orange;
+    background-color: #fe6601;
 }
 #overview h3 {
     margin-top: 50px;
-
-    color: blue;
-    font-size: 22px;
+    color: #4c4a9b;
+    font-size: 38px;
     padding-bottom: 30px;
+    font-weight: normal;
 }
 
 .icon-overview {
@@ -196,7 +220,7 @@ section a {
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: orange;
+    background-color: #fe6601;
 }
 .img-overview {
     padding: 0 4px;
@@ -217,6 +241,10 @@ section a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+#overview h4 {
+    margin-top: 0;
+}
 #overview .slider-buttons a {
     width: 50px;
     margin: 0;
@@ -226,7 +254,7 @@ section a {
     width: 100%;
 }
 .img-overview.active img {
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #fe6601;
 }
 .relative {
     position: relative;
@@ -234,10 +262,9 @@ section a {
 
 
 #our-numbers {
-    padding: 50px 0;
+    padding: 80px 0;
     color: white;
     background-image: url(images/parallax_01.jpg);
-    height: 427px;
     background-position-Y: center;
     background-size: cover;
 }
@@ -248,11 +275,15 @@ section a {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     border: 1px solid white;
     border-radius: 50%;
     margin-bottom: 30px;
+}
+
+#our-numbers h4 {
+    color: white;
 }
 
 .number-cont span {
@@ -267,15 +298,15 @@ section a {
 }
 
 #our-classes h2 {
-    color: blue;
+    color: #4c4a9b;
     font-weight: normal;
     font-size: 40px;
 }
 
 .big-para {
     margin-bottom: 30px;
-    font-size: 30px;
-    color: purple;
+    font-size: 32px;
+    color: #554e9e;
     padding-right: 10px;
 }
 .small-para {
@@ -289,9 +320,12 @@ section a {
     margin-top: 50px;
     color: white;
 }
+.card-dark h4 {
+    color: white;
+}
 
 .title-class {
-    padding-bottom: 63px;
+    padding-bottom: 50px;
 }
 
 .separation {
@@ -299,9 +333,9 @@ section a {
 }
 
 .img-class img {
-    min-height: 207px;
-    width: 100%;
+    max-width: 100%;
     display: inherit;
+    height: 207px;
 }
 
 #our-classes a {
@@ -309,17 +343,21 @@ section a {
     bottom: 0px;
     right: 0;
 }
-
+.class-title {
+    padding-bottom: 80px;
+}
 .padding20 {
     padding: 20px;
 }
 
 #education {
-    background-color: lightgrey;
+    background-color: #e8e6e7;
 }
 
 .back-card {
-    background-color: purple;
+    display: inherit;
+    height: 207px;
+    background-color: #554e9e;
     padding: 20px;
 }
 .edu-logo {
@@ -330,14 +368,14 @@ section a {
     background-color: white;
 }
 #education h4 {
-    color: blue;
+    color: #4c4a9b;
 }
 
 #gallery {
     padding: 0;
 }
 
-#meet img {
+.photos img {
     width: 100%;
 }
 #meet ul {
@@ -346,7 +384,10 @@ section a {
     flex-direction: column;
     justify-content: flex-end;
 }
-
+.breaks img {
+    width: auto;
+    margin-bottom: 80px;
+}
 #meet a {
     width: 50px;
 }
@@ -361,7 +402,7 @@ section a {
 .quote {
     margin: auto;
     width: 119px;
-    border: 3px solid orange;
+    border: 3px solid #fe6601;
     position: absolute;
     top: 46px;
     left: 44%;
@@ -425,7 +466,7 @@ section a {
 }
 
 #contact h4 {
-    color: blue;
+    color: #4c4a9b;
 }
 #contact .edu-logo {
     height: 50px;
@@ -440,7 +481,14 @@ section a {
 #contact a {
     min-width: 120px;;
 }
-
+footer {
+    color: white;
+}
+footer h4 {
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
 footer img {
     width: 100%;
 }
