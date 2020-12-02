@@ -6,22 +6,22 @@ var app = new Vue ({
             {
                 num: '507',
                 title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .',
+                content:'Lorem ipsum dolor sit amet .',
             },
             {
                 num: '507',
                 title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .',
+                content:'Lorem ipsum dolor sit amet .',
             },
             {
                 num: '507',
                 title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .',
+                content:'Lorem ipsum dolor sit amet .',
             },
             {
                 num: '507',
                 title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo itation .',
+                content:'Lorem ipsum dolor sit amet .',
             }
         ],
         navMenu: [
