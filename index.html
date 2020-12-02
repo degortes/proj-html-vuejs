@@ -103,7 +103,7 @@
                             </div>
                             <div class="col-9">
                                 <h4>Full Day Session</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor </p>
+                                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum. </p>
 
                             </div>
                         </div>
@@ -112,8 +112,8 @@
                                 <img src="images/diagram_alt.png" alt="">
                             </div>
                             <div class="col-9">
-                                <h4>Full Day Session</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor  </p>
+                                <h4>Varied Classes</h4>
+                                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
 
                             </div>
                         </div>
@@ -176,66 +176,22 @@
                         </div>
                     </div>
                     <div class="col-12 card-container title-class">
-                        <div class="col-6 card-dark">
+                        <div v-for="item in classes" class="col-6 card-dark">
                             <div class="col-6 back-card">
-                                <h4>Little Lambs</h4>
-                                <p>Class Name</p>
+                                <h4>{{item.name}}</h4>
+                                <p>{{item.class}}</p>
                                 <div class="col-6 text-center">
-                                    <h5>12-24</h5>
-                                    <p>Month olds</p>
+                                    <h5>{{item.time}}</h5>
+                                    <p>{{item.age}}</p>
                                 </div>
                                 <div class="col-6 text-center separation">
-                                    <h5>9</h5>
-                                    <p>Classes</p>
+                                    <h5>{{item.size}}</h5>
+                                    <p>{{item.term}}</p>
                                 </div>
                             </div>
                             <div class="col-6 text-right">
                                 <div class="img-class relative">
-                                    <img src="images/class_01-690x506.jpg" alt="">
-                                    <a class="">Read More
-                                        <i class="fas fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 card-dark">
-                            <div class="col-6 back-card">
-                                <h4>Little Lambs</h4>
-                                <p>Class Name</p>
-                                <div class="col-6 text-center">
-                                    <h5>12-24</h5>
-                                    <p>Month olds</p>
-                                </div>
-                                <div class="col-6 text-center separation">
-                                    <h5>9</h5>
-                                    <p>Classes</p>
-                                </div>
-                            </div>
-                            <div class="col-6 text-right">
-                                <div class="img-class relative">
-                                    <img src="images/class_01-690x506.jpg" alt="">
-                                    <a class="">Read More
-                                        <i class="fas fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 card-dark">
-                            <div class="col-6 back-card">
-                                <h4>Little Lambs</h4>
-                                <p>Class Name</p>
-                                <div class="col-6 text-center">
-                                    <h5>12-24</h5>
-                                    <p>Month olds</p>
-                                </div>
-                                <div class="col-6 text-center separation">
-                                    <h5>9</h5>
-                                    <p>Classes</p>
-                                </div>
-                            </div>
-                            <div class="col-6 text-right">
-                                <div class="img-class relative">
-                                    <img src="images/class_01-690x506.jpg" alt="">
+                                    <img :src="'images/class'+item.img+'-690x506.jpg'" alt="">
                                     <a class="">Read More
                                         <i class="fas fa-chevron-right"></i>
                                     </a>
@@ -255,104 +211,30 @@
                             <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis aenean interdum.</p>
                         </div>
                         <ul class="col-12">
-                            <li class="edu-list">
+                            <li v-for="item in education[0].list"class="edu-list">
                                 <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
-                            </li>
-                            <li class="edu-list">
-                                <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
-                            </li>
-                            <li class="edu-list">
-                                <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
-                            </li>
-                            <li class="edu-list">
-                                <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
-                            </li>
-                            <li class="edu-list">
-                                <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
-                            </li>
-                            <li class="edu-list">
-                                <img src="images/style_1.png" alt="">
-                                <p>Comprehensive reporting on individual achievement</p>
+                                <p>{{item}}</p>
                             </li>
                         </ul>
                     </div>
                     <div class="col-6 padding20">
-                        <ul class="col-6 text-center padding20 ">
+                        <ul v-for="item in education[0].card"class="col-6 text-center padding20 ">
                             <li class="padding20 edu-logo">
-                                <img src="images/toy.png" alt="">
+                                <img :src="'images/'+ item.img +'.png'" alt="">
                             </li>
                             <li>
-                                <h4>Learning & fun</h4>
+                                <h4>{{item.title}}</h4>
                             </li>
                             <li>
-                                <p>Praesent modea est gravida node vehicula luctus.</p>
-                            </li>
-                        </ul>
-                        <ul class="col-6 text-center padding20 ">
-                            <li class="padding20 edu-logo">
-                                <img src="images/toy.png" alt="">
-                            </li>
-                            <li>
-                                <h4>Learning & fun</h4>
-                            </li>
-                            <li>
-                                <p>Praesent modea est gravida node vehicula luctus.</p>
-                            </li>
-                        </ul>
-                        <ul class="col-6 text-center padding20 ">
-                            <li class="padding20 edu-logo">
-                                <img src="images/toy.png" alt="">
-                            </li>
-                            <li>
-                                <h4>Learning & fun</h4>
-                            </li>
-                            <li>
-                                <p>Praesent modea est gravida node vehicula luctus.</p>
-                            </li>
-                        </ul>
-                        <ul class="col-6 text-center padding20 ">
-                            <li class="padding20 edu-logo">
-                                <img src="images/toy.png" alt="">
-                            </li>
-                            <li>
-                                <h4>Learning & fun</h4>
-                            </li>
-                            <li>
-                                <p>Praesent modea est gravida node vehicula luctus.</p>
+                                <p>{{item.text}}</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
             <section id="gallery">
-                <div class="col-3 relative">
-                    <img src="images/gallery_01-690x506.jpg" alt="">
-                    <div class="plus">
-                        <img src="images/image_overlay.png" alt="">
-                    </div>
-                </div>
-                <div class="col-3 relative">
-                    <img src="images/gallery_02-690x506.jpg"  alt="">
-                    <div class="plus">
-                        <img src="images/image_overlay.png" alt="">
-                    </div>
-
-                </div>
-                <div class="col-3 relative">
-                    <img src="images/gallery_03-690x506.jpg" alt="">
-                    <div class="plus">
-                        <img src="images/image_overlay.png" alt="">
-                    </div>
-
-
-                </div>
-                <div class="col-3 relative">
-                    <img src="images/gallery_04-690x506.jpg" alt="">
+                <div v-for="item in gallery"class="col-3 relative">
+                    <img :src="'images/'+item+'.jpg'" alt="">
                     <div class="plus">
                         <img src="images/image_overlay.png" alt="">
                     </div>
@@ -386,123 +268,33 @@
                             <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.</p>
                         </div>
                     </div>
-                    <div class="col-6 know-card">
+                    <div v-for="(item, index) in meet"class="col-6 know-card">
                         <div class="quote text-right">
                             <img src="images/quote.png" alt="">
                         </div>
                         <ul class="col-6 photos text-center">
                             <li class="relative">
-                                <img src="images/team_04.jpg" alt="">
+                                <img :src="'images/'+item.img +'.jpg'" alt="">
                                 <div class="plus">
                                     <img src="images/image_overlay.png" alt="">
                                 </div>
                             </li>
                             <li>
-                                <h4>RuthRichie</h4>
+                                <h4>{{item.name}}</h4>
                             </li>
                             <li>
-                                <p>Teacher</p>
+                                <p>{{item.role}}</p>
                             </li>
 
                         </ul>
                         <ul class="col-6">
                             <li class="padding20">
-                                <p>I have just finished my studies in Early Childhood Education, and I am also the kid’s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
+                                <p>{{item.text}}</p>
                             </li>
                             <li class="social-btn">
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 know-card">
-                        <div class="quote text-right">
-                            <img src="images/quote.png" alt="">
-                        </div>
-                        <ul class="col-6 photos text-center">
-                            <li class="relative">
-                                <img src="images/team_04.jpg" alt="">
-                                <div class="plus">
-                                    <img src="images/image_overlay.png" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <h4>RuthRichie</h4>
-                            </li>
-                            <li>
-                                <p>Teacher</p>
-                            </li>
-
-                        </ul>
-                        <ul class="col-6">
-                            <li class="padding20">
-                                <p>I have just finished my studies in Early Childhood Education, and I am also the kid’s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
-                            </li>
-                            <li class="social-btn">
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 know-card">
-                        <div class="quote text-right">
-                            <img src="images/quote.png" alt="">
-                        </div>
-                        <ul class="col-6 photos text-center">
-                            <li class="relative">
-                                <img src="images/team_04.jpg" alt="">
-                                <div class="plus">
-                                    <img src="images/image_overlay.png" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <h4>RuthRichie</h4>
-                            </li>
-                            <li>
-                                <p>Teacher</p>
-                            </li>
-
-                        </ul>
-                        <ul class="col-6">
-                            <li class="padding20">
-                                <p>I have just finished my studies in Early Childhood Education, and I am also the kid’s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
-                            </li>
-                            <li class="social-btn">
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 know-card">
-                        <div class="quote text-right">
-                            <img src="images/quote.png" alt="">
-                        </div>
-                        <ul class="col-6 photos text-center">
-                            <li class="relative">
-                                <img src="images/team_04.jpg" alt="">
-                                <div class="plus">
-                                    <img src="images/image_overlay.png" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <h4>RuthRichie</h4>
-                            </li>
-                            <li>
-                                <p>Teacher</p>
-                            </li>
-
-                        </ul>
-                        <ul class="col-6">
-                            <li class="padding20">
-                                <p>I have just finished my studies in Early Childhood Education, and I am also the kid’s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.</p>
-                            </li>
-                            <li class="social-btn">
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
-                                <a href="#">ciao</a>
+                                <a v-for="icon in item.icons" href="#">
+                                    <img :src="'images/'+ icon + '.png'" alt="">
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -536,89 +328,31 @@
                         <p>Keep up to date with the latest news</p>
                         <img class="breaks" src="images/header_divider.png" alt="">
                     </div>
-                    <div class="col-4 new-card">
+                    <div v-for="item in newWh" class="col-4 new-card">
                         <ul>
                             <li class="know-card">
-                                <p>October 03, 2014</p>
+                                <p>{{item.date}}</p>
                             </li>
                             <li>
                                 <div class="new-card-img">
-                                    <img src="images/gallery_03-690x506.jpg" alt="">
-                                    <a href="#">42</a>
+                                    <img :src="'images/'+ item.img +'.jpg'" alt="">
+                                    <a href="#">{{item.num}}</a>
                                 </div>
                             </li>
                             <li>
-                                <h4>Paintning Lesson</h4>
+                                <h4>{{item.title}}</h4>
                             </li>
                             <li class="end-new">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                                <p>{{item.text}}</p>
                             </li>
                             <li class="col-12 low-card">
                                 <div class="col-6 ">
                                     <img src="images/author.png" alt="">
-                                    <p>Anna Brown</p>
+                                    <p>{{item.author}}</p>
                                 </div>
                                 <div class="col-6 ">
                                     <img src="images/category.png" alt="">
-                                    <p>Events, fun</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4 new-card">
-                        <ul>
-                            <li class="know-card">
-                                <p>October 03, 2014</p>
-                            </li>
-                            <li>
-                                <div class="new-card-img">
-                                    <img src="images/gallery_03-690x506.jpg" alt="">
-                                    <a href="#">42</a>
-                                </div>
-                            </li>
-                            <li>
-                                <h4>Paintning Lesson</h4>
-                            </li>
-                            <li class="end-new">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                            </li>
-                            <li class="col-12 low-card">
-                                <div class="col-6 ">
-                                    <img src="images/author.png" alt="">
-                                    <p>Anna Brown</p>
-                                </div>
-                                <div class="col-6 ">
-                                    <img src="images/category.png" alt="">
-                                    <p>Events, fun</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-4 new-card">
-                        <ul>
-                            <li class="know-card">
-                                <p>October 03, 2014</p>
-                            </li>
-                            <li>
-                                <div class="new-card-img">
-                                    <img src="images/gallery_03-690x506.jpg" alt="">
-                                    <a href="#">42</a>
-                                </div>
-                            </li>
-                            <li>
-                                <h4>Paintning Lesson</h4>
-                            </li>
-                            <li class="end-new">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
-                            </li>
-                            <li class="col-12 low-card">
-                                <div class="col-6 ">
-                                    <img src="images/author.png" alt="">
-                                    <p>Anna Brown</p>
-                                </div>
-                                <div class="col-6 ">
-                                    <img src="images/category.png" alt="">
-                                    <p>Events, fun</p>
+                                    <p>{{item.genre}}</p>
                                 </div>
                             </li>
                         </ul>
@@ -638,7 +372,20 @@
                         <p>Our postal address and contact details</p>
                         <img src="images/header_divider.png" alt="">
                     </div>
-                    <ul class="col-3 text-center padding20 ">
+                    <ul  v-for="item in contact"class="col-3 text-center padding20 ">
+                        <li class="padding20 edu-logo">
+                            <img :src="'images/'+ item.img+ '.png'" alt="">
+                        </li>
+                        <li>
+                            <h4>{{item.title}}</h4>
+                        </li>
+                        <li>
+                            <p>{{item.data1}}</p>
+                            <p>{{item.data2}}</p>
+                            <p :class="item.data3.includes('@')? 'active': null">{{item.data3}}</p>
+                        </li>
+                    </ul>
+                    <!-- <ul class="col-3 text-center padding20 ">
                         <li class="padding20 edu-logo">
                             <img src="images/toy.png" alt="">
                         </li>
@@ -670,18 +417,7 @@
                         <li>
                             <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
                         </li>
-                    </ul>
-                    <ul class="col-3 text-center padding20 ">
-                        <li class="padding20 edu-logo">
-                            <img src="images/toy.png" alt="">
-                        </li>
-                        <li>
-                            <h4>Learning & fun</h4>
-                        </li>
-                        <li>
-                            <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
-                        </li>
-                    </ul>
+                    </ul> -->
                     <div class="col-12 padding20">
                         <div class="col-6">
                             <div class="col-12 input-left">
@@ -767,7 +503,7 @@
 
                         <li>
                             <ul>
-                                <li class=" recent-cont col-12" v-for="item in recentPost ">
+                                <li class="title-class recent-cont col-12" v-for="item in recentPost ">
                                     <div class=" foot-img col-5">
                                         <img :src="'images/'+ item.img + '.jpg'" alt="">
                                     </div>
@@ -783,9 +519,18 @@
                         </li>
                     </ul>
 
+
                 </div>
 
             </footer>
+            <div class="col-12 foot-btn text-center">
+                <a v-for="item in lowFoot"href="#">
+                    <img :src="'images/'+item+'.png'" alt="">
+                </a>
+            </div>
+            <div class="text-center padding20 theend">
+                © Fable - Children Kindergarten WordPress Theme by QuanticaLabs
+            </div>
         </div>
         <script src="main.js" charset="utf-8"></script>
     </body>

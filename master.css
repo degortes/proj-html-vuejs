@@ -7,6 +7,9 @@
 }
 /* generali */
 
+a img {
+    width: 50px;
+}
 
 p {
     color: #707070;
@@ -168,7 +171,7 @@ header p {
     padding: 50px 0;
 }
 .right-learn {
-    padding: 30px 0;
+    padding: 50px 0;
 
 }
 .btn-white {
@@ -340,6 +343,7 @@ section a {
 }
 
 .number-cont span {
+    font-weight: 100;
     font-size: 50px;
 }
 #our-numbers p {
@@ -455,6 +459,11 @@ section a {
 
 }
 
+.photos:hover {
+    background-color: #e8e6e7;
+
+}
+
 .photos:hover .plus {
     opacity: 5;
 }
@@ -500,6 +509,7 @@ section a {
     margin-bottom: 80px;
 }
 #meet a {
+    border-right: 1px solid white;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -621,10 +631,16 @@ section a {
     height: 50px;
 }
 
+p.active {
+    text-decoration: underline;
+    color: #4c4a9b;
+}
+
 #contact input, textarea {
     margin: auto;
     padding: 12px;
     border: 1px solid rgba(232, 230, 231, 0.7);
+    resize: none;
 }
 
 .input-left {
@@ -720,4 +736,21 @@ footer h5 + img {
 }
 footer span {
     opacity: 0.5;
+}
+
+.foot-btn a {
+    margin: 30px 0;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    opacity: 1;
+    line-height: 40px;
+    background-color: #fe6601;
+    border-right: 1px solid white;
+}
+
+.theend {
+    border: 1px solid black;
+    margin-bottom: 30px;
 }

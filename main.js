@@ -9,19 +9,19 @@ var app = new Vue ({
                 content:'Lorem ipsum dolor sit amet .',
             },
             {
-                num: '507',
-                title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet .',
+                num: '235',
+                title: 'Teaching Hours',
+                content:'Elipsis morbi nulla a metro interdum vitae elite.',
             },
             {
-                num: '507',
-                title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet .',
+                num: '100%',
+                title: 'Satisfied Parents',
+                content:'Elementum pulvinar detos diaspis movum blandit.',
             },
             {
-                num: '507',
-                title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet .',
+                num: '1050',
+                title: 'Meals Per Year',
+                content:'Elementum pulvinar detos diaspis movum blandit.',
             }
         ],
         navMenu: [
@@ -76,6 +76,166 @@ var app = new Vue ({
                 img: 'schoolbag_alt'
             }
         ],
+        classes: [
+            {
+            name: 'Little Lambs',
+            class: 'Class Name',
+            time: '12-24',
+            age: 'Month olds',
+            size: '9',
+            term: 'Class size',
+            img: '_01'
+
+        },
+        {
+            name: 'Bouncy Bears',
+            class: 'Class Name',
+            time: '2-3',
+            age: 'Year olds',
+            size: '12',
+            term: 'Class size',
+            img: '_02'
+
+        },
+        {
+            name: 'Tenderhearts',
+            class: 'Class Name',
+            time: '3-4',
+            age: 'Year olds',
+            size: '15',
+            term: 'Class size',
+            img:'_03'
+        },
+        {
+            name: 'Shining Stars',
+            class: 'Class Name',
+            time: '4-5',
+            age: 'Year olds',
+            size: '20',
+            term: 'Class size',
+            img:'_04'
+        },
+    ],
+        education: [
+            {
+                list: ['Comprehensive reporting on individual achievement','Educational field trips and school presentations','Individual attention in a small-class setting','Learning program with after-school care','Opportunities to carry out scientific investigations','Positive learning environment for your child'],
+                card: [
+                    {
+                        img: 'toy',
+                        title: 'Learning & fun',
+                        text: 'Praesent modea est gravida node vehicula luctus.',
+                    },
+                    {
+                        img: 'meal',
+                        title: 'Healthy Meals',
+                        text: 'Terminal interdum a eleifend maecenas est morbi.',
+                    },
+                    {
+                        img: 'school',
+                        title: 'Friendly Place',
+                        text: 'Terminal interdum a eleifend maecenas est morbi.',
+                    },
+                    {
+                        img: 'shield',
+                        title: 'Children Safety',
+                        text: 'Praesent modea est gravida node vehicula luctus.',
+                    },
+                ],
+            },
+        ],
+        gallery: ['gallery_01-690x506','gallery_02-690x506','gallery_03-690x506','gallery_04-690x506'],
+        meet: [
+            {
+                img: 'team_04',
+                name: 'Ruth Richie',
+                role: 'Teacher',
+                text: 'I have just finished my studies in Early Childhood Education, and I am also the kid’s yoga teacher here at Fable. I enjoy cooking, swimming and bike riding in my free time.',
+                icons: ['mail','facebook','pinterest']
+            },
+            {
+                img: 'team_03',
+                name: 'Katie Willmore',
+                role: 'Assistant Teacher',
+                text: 'My name is Katie. I grew up and studied in Canada. This is my second year at Fable and love every minute of it, making the children’s learning experience fun.',
+                icons: ['dribbble','stumbleupon','instagram']
+
+            },
+            {
+                img: 'team_02',
+                name: 'Angelica Watson',
+                role: 'Lead Teacher',
+                text: 'I hold a degree in Early Childhood Education and an advanced English language certificate. I have been working as a kindergarten teacher since 2002.',
+                icons: ['bing','skype','linkedin']
+
+            },
+            {
+                img: 'team_01',
+                name: 'Angela Lynn',
+                role: 'Teacher',
+                text: 'I have completed a Graduate Diploma in Early Childhood Teaching. I have worked with children aged from six weeks to eight years. This is my second year at Fable.',
+                icons: ['youtube','twitter','googleplus']
+
+            }
+        ],
+        newWh: [
+            {
+                date: 'October 03, 2014',
+                img: 'blog_09',
+                title: 'Drawing and Painting Lessons',
+                text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum [...]',
+                author: 'Anna Brown',
+                genre: 'Events, Fun',
+                num: '42'
+            },
+            {
+                date: 'October 03, 2014',
+                img: 'blog_10',
+                title: 'Fall Parents Meeting Day',
+                text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum [...]',
+                author: 'Anna Brown',
+                genre: 'Dance, Fun',
+                num: '19'
+            },
+            {
+                date: 'September 20, 2014',
+                img: 'blog_08',
+                title: 'Birthday in Kindergarten',
+                text: 'Magna est consectetur interdum modest dictum. Curabitur est faucibus, malesuada esttincidunt etos et mauris, nunc a libero govum est cuprum [...]',
+                author: 'Anna Brown',
+                genre: 'Games, General',
+                num: '22'
+            },
+        ],
+        contact: [
+            {
+                img: 'envelope (1)',
+                title: 'Postal Address',
+                data1: 'Fable Care Center',
+                data2: '85 Fentiman Ave',
+                data3: 'Ottawa, ON K1S 0T7',
+            },
+            {
+                img: 'mobile',
+                title: 'Phone & E-mail',
+                data1: 'Phone: 1-800-64-38',
+                data2: 'Fax: 1-800-64-39',
+                data3: 'office@fable.com',
+            },
+            {
+                img: 'clock',
+                title: 'Business Hours',
+                data1: 'Monday – Friday',
+                data2: '8.00 am – 5.00 pm',
+                data3: 'Weekend Closed',
+            },
+            {
+                img: 'document (1)',
+                title: 'Sessions',
+                data1: 'Mornings, 8 am – 12 noon',
+                data2: 'Afternoons, 1 pm – 5 pm',
+                data3: 'Full Day, 8 am – 5 pm',
+            },
+        ],
         archives: ['october 2014(2)','september 2014(2)','august 2014(2)','july 2014(2)','june 2014(2)','may 2014(1)'],
         features: ['friendly and welcoming place','Science and art classes','Positive learning environment','Educational field trips','Writing and reading classes','Science and art classes'],
         recentPost: [
@@ -85,16 +245,17 @@ var app = new Vue ({
                 date: 'October 03, 2014'
             },
             {
-                name: 'Drawing and Painting Lessons',
-                img: 'blog_09-300x180',
+                name: 'Fall Parents Meeting Day',
+                img: 'blog_10-300x180',
                 date: 'October 03, 2014'
             },
             {
-                name: 'Drawing and Painting Lessons',
-                img: 'blog_09-300x180',
-                date: 'October 03, 2014'
+                name: 'Birthday in Kindergarten',
+                img: 'blog_08-300x180',
+                date: 'September 20, 2014'
             }
-        ]
-    }
+        ],
+        lowFoot: ['behance', 'dribbble','envato','facebook','twitter']
+        }
 
 });
