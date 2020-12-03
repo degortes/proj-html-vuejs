@@ -57,23 +57,23 @@ var app = new Vue ({
         welcome:[
             {
                 title: 'Morbi Etos',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
+                content: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
                 img: 'schoolbag_alt'
             },
             {
-                title: 'Morbi Etos',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-                img: 'schoolbag_alt'
+                title: 'Congue Gravida',
+                content: 'Elipsis magna a terminal nulla elementum morbi elite forte maecenas est magna etos interdum vitae est.',
+                img: 'stroller_alt'
             },
             {
-                title: 'Morbi Etos',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-                img: 'schoolbag_alt'
+                title: 'Maecenas Node',
+                content: 'Praesent interdum est gravida vehicula est node maecenas loareet morbi a dosis luctus novum est praesent.',
+                img: 'globe_alt'
             },
             {
-                title: 'Morbi Etos',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.',
-                img: 'schoolbag_alt'
+                title: 'Praesent Morbi',
+                content: 'Elipsis magna a terminal nulla elementum morbi elite forte maecenas est magna etos interdum vitae est.',
+                img: 'bell_alt'
             }
         ],
         classes: [
@@ -256,6 +256,6 @@ var app = new Vue ({
             }
         ],
         lowFoot: ['behance', 'dribbble','envato','facebook','twitter']
-        }
+    }
 
 });

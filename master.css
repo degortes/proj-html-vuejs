@@ -85,10 +85,24 @@ header li:hover {
     background-color: #fe6601;
 }
 
+/* hover */
+header li.active {
+    background-color: #fe6601;
+}
+header li.active p {
+    color: white;
+}
+
+header li.active img {
+    object-position: 0 -32px;
+}
+
 header p {
     color: #4c4a9b;
 
 }
+
+
 
 .nav-img {
     height: 32px;
@@ -585,11 +599,14 @@ section a {
 .new-card-img {
     height: 205px;
 }
-.new-card-img img {
+.new-card-img>img {
     width: 100%;
     display: block;
     height: 200px;
     object-fit: cover;
+}
+.new-card-img:hover .plus {
+    opacity: 0.8;
 }
 
 .end-new {
@@ -598,7 +615,6 @@ section a {
 }
 
 .new-card div p {
-    padding-left: 10px;
     display: inline-block;
 }
 .low-new {
@@ -642,7 +658,11 @@ p.active {
     border: 1px solid rgba(232, 230, 231, 0.7);
     resize: none;
 }
-
+.input-left img {
+    position: absolute;
+    right: 25px;
+    top: 28px;
+}
 .input-left {
     padding: 15px 15px 15px 0;
 }
@@ -716,6 +736,7 @@ footer .tables {
     height: 20px;
 }
 .foot-img img {
+    object-fit: cover;
     height: 90px;
     width: 90px;
 }

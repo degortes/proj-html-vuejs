@@ -23,7 +23,7 @@
                     </div>
                     <nav class="menu-item">
                         <ul>
-                            <li v-for="item in navMenu" class=" text-center">
+                            <li v-for="(item,index) in navMenu" :class="index==0? 'active' : null"class="text-center">
                                 <div class="nav-img">
                                     <img :src="'images/'+item.img + '.png'" alt="">
                                 </div>
@@ -127,13 +127,13 @@
                             </div>
                         </div>
                         <div class="col-4 img-overview">
-                            <img src="images/gallery_01-690x506.jpg" alt="">
+                            <img src="images/gallery_07-690x506.jpg" alt="">
                         </div>
                         <div class="col-4 img-overview active">
                             <img src="images/gallery_01-690x506.jpg" alt="">
                         </div>
                         <div class="col-4 img-overview">
-                            <img src="images/gallery_01-690x506.jpg" alt="">
+                            <img src="images/gallery_08-690x506.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -152,11 +152,11 @@
                         </li>
                     </ul>
                     <div class="col-12 text-center right-learn">
+                        <button class="minibut bwhite last" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite last" type="button" name="button"></button>
                     </div>
                 </div>
             </section>
@@ -164,7 +164,7 @@
                 <div class="container">
                     <div class="col-12 text-center class-title">
                         <h2>Our Classes</h2>
-                        <p>dfkd hfuisd uihsdf duish </p>
+                        <p>Our preschool program has four dedicated classes</p>
                         <img src="images/header_divider.png" alt="">
                     </div>
                     <div class="col-12 title-class">
@@ -315,8 +315,9 @@
                         <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
                         <button class=" minibut bwhite last" type="button" name="button"></button>
+                        <button class=" minibut bwhite" type="button" name="button"></button>
+                        <button class=" minibut bwhite" type="button" name="button"></button>
                     </div>
 
                 </div>
@@ -334,8 +335,11 @@
                                 <p>{{item.date}}</p>
                             </li>
                             <li>
-                                <div class="new-card-img">
+                                <div class="new-card-img relative">
                                     <img :src="'images/'+ item.img +'.jpg'" alt="">
+                                    <div class="plus">
+                                        <img src="images/image_overlay.png" alt="">
+                                    </div>
                                     <a href="#">{{item.num}}</a>
                                 </div>
                             </li>
@@ -385,43 +389,11 @@
                             <p :class="item.data3.includes('@')? 'active': null">{{item.data3}}</p>
                         </li>
                     </ul>
-                    <!-- <ul class="col-3 text-center padding20 ">
-                        <li class="padding20 edu-logo">
-                            <img src="images/toy.png" alt="">
-                        </li>
-                        <li>
-                            <h4>Learning & fun</h4>
-                        </li>
-                        <li>
-                            <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
-                        </li>
-                    </ul>
-                    <ul class="col-3 text-center padding20 ">
-                        <li class="padding20 edu-logo">
-                            <img src="images/toy.png" alt="">
-                        </li>
-                        <li>
-                            <h4>Learning & fun</h4>
-                        </li>
-                        <li>
-                            <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
-                        </li>
-                    </ul>
-                    <ul class="col-3 text-center padding20 ">
-                        <li class="padding20 edu-logo">
-                            <img src="images/toy.png" alt="">
-                        </li>
-                        <li>
-                            <h4>Learning & fun</h4>
-                        </li>
-                        <li>
-                            <p>fdgdfgh dfgh dhgertpi90  87934yr59 3ur 8ru 98ery9ey8e 89eyf9</p>
-                        </li>
-                    </ul> -->
                     <div class="col-12 padding20">
                         <div class="col-6">
-                            <div class="col-12 input-left">
+                            <div class="col-12 input-left relative">
                                 <input class="col-12" placeholder="Your Name *"type="text"name="" value="">
+                                <img src="images/image.png" alt="">
                             </div>
                             <div class="col-12 input-left">
                                 <input class="col-12" placeholder="Your E-mail *"type="text"name="" value="">
@@ -453,7 +425,7 @@
                                 <hr>
                             </li>
                             <li>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                                <p>Elipsis magna a nulla elite forte maecenas est elementum magna etos interdum movum morbi vehicula morbi.</p>
                             </li>
                             <li>
                                 <img src="images/logo_footer.png" alt="">
@@ -482,7 +454,7 @@
                             <hr>
                         </li>
                         <li>
-                            <p>Lorem ipsum dolor sit amet, consectetur laborinim veniam, quis nostrud exercitation </p>
+                            <p>Nunc gravida rutrum mauris vehin hasellus ac pretium augue vivamul lacus ligul mattis ac vene:</p>
                         </li>
                         <li>
                             <ul>
@@ -500,7 +472,6 @@
                         <li>
                             <hr>
                         </li>
-
                         <li>
                             <ul>
                                 <li class="title-class recent-cont col-12" v-for="item in recentPost ">
@@ -518,10 +489,7 @@
                             </ul>
                         </li>
                     </ul>
-
-
                 </div>
-
             </footer>
             <div class="col-12 foot-btn text-center">
                 <a v-for="item in lowFoot"href="#">
