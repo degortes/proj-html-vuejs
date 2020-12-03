@@ -162,10 +162,6 @@ header p {
 
 .right-cont img {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    transform: translateY(-60%);
 }
 
 .left-cont img {
@@ -219,6 +215,7 @@ header p {
 
 }
 .btn-white {
+    cursor: pointer;
     text-transform: uppercase;
     color: white;
     padding: 10px 15px;
@@ -846,10 +843,20 @@ footer span {
         display: none;
     }
 
-    .right-cont img {
-        display: inline-block;
-    }
+
     .banner h3 {
         font-size: 30px;
     }
+}
+@media screen and (min-width: 1170px) {
+
+    .right-cont img {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        transform: translateY(-60%);
+
+    }
+
 }
