@@ -6,7 +6,7 @@ var app = new Vue ({
             {
                 num: '507',
                 title: 'Our Pupils',
-                content:'Lorem ipsum dolor sit amet .',
+                content:'Pulvinar forte maestro node terminal est elipsis prism.',
             },
             {
                 num: '235',
@@ -21,7 +21,7 @@ var app = new Vue ({
             {
                 num: '1050',
                 title: 'Meals Per Year',
-                content:'Elementum pulvinar detos diaspis movum blandit.',
+                content:'Pulvinar forte maestro node terminal est elipsis prism.',
             }
         ],
         navMenu: [
@@ -79,7 +79,7 @@ var app = new Vue ({
         classes: [
             {
             name: 'Little Lambs',
-            class: 'Class Name',
+            class: 'Class name',
             time: '12-24',
             age: 'Month olds',
             size: '9',
@@ -89,7 +89,7 @@ var app = new Vue ({
         },
         {
             name: 'Bouncy Bears',
-            class: 'Class Name',
+            class: 'Class name',
             time: '2-3',
             age: 'Year olds',
             size: '12',
@@ -99,7 +99,7 @@ var app = new Vue ({
         },
         {
             name: 'Tenderhearts',
-            class: 'Class Name',
+            class: 'Class name',
             time: '3-4',
             age: 'Year olds',
             size: '15',
@@ -108,7 +108,7 @@ var app = new Vue ({
         },
         {
             name: 'Shining Stars',
-            class: 'Class Name',
+            class: 'Class name',
             time: '4-5',
             age: 'Year olds',
             size: '20',

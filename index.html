@@ -217,7 +217,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6 padding20">
+                    <div class="col-6">
                         <ul v-for="item in education[0].card"class="col-6 text-center padding20 ">
                             <li class="padding20 edu-logo">
                                 <img :src="'images/'+ item.img +'.png'" alt="">
@@ -253,10 +253,10 @@
                 </div>
             </section>
             <section id="meet">
-                <div class="container">
+                <div class="container class-title">
                     <div class="col-12 text-center class-title">
                         <h2>Meet Our Staff</h2>
-                        <p>with education and experience in early childhood care</p>
+                        <p>With education and experience in early childhood care</p>
                         <img class="breaks" src="images/header_divider.png" alt="">
 
                     </div>
@@ -269,14 +269,14 @@
                         </div>
                     </div>
                     <div v-for="(item, index) in meet"class="col-6 know-card">
-                        <div class="quote text-right">
-                            <img src="images/quote.png" alt="">
-                        </div>
                         <ul class="col-6 photos text-center">
                             <li class="relative">
                                 <img :src="'images/'+item.img +'.jpg'" alt="">
                                 <div class="plus">
                                     <img src="images/image_overlay.png" alt="">
+                                </div>
+                                <div class="quote text-right">
+                                    <img src="images/quote.png" alt="">
                                 </div>
                             </li>
                             <li>
@@ -399,7 +399,7 @@
                                 <input class="col-12" placeholder="Your E-mail *"type="text"name="" value="">
                             </div>
                             <div class="col-12 input-left">
-                                <input class="col-12" placeholder="Subject *"type="text"name="" value="">
+                                <input class="col-12" placeholder="Subject"type="text"name="" value="">
                             </div>
 
                         </div>
@@ -480,8 +480,8 @@
                                     </div>
                                     <div class="col-7">
                                         <h5>{{item.name}}</h5>
-                                        <img src="images/date_footer.png" alt="">
-                                        <span>{{item.date}}</span>
+                                        <img class="f-left" class="f-left" src="images/date_footer.png" alt="">
+                                        <span class="col-10" >{{item.date}}</span>
 
                                     </div>
 
