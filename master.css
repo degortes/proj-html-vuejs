@@ -585,9 +585,16 @@ section a {
     font-size: 20px;
 }
 .photos p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-bottom: 0px;
 }
+.photos:hover p {
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+
+}
+
+
 .quote {
     display: none;
 }
