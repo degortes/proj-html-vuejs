@@ -24,6 +24,9 @@ footer, section {
     padding: 20px;
 }
 
+header {
+    padding: 0 5px;
+}
 ul {
     list-style-type: none;
 }
@@ -201,7 +204,7 @@ header p {
 
 
 .banner {
-    padding: 0;
+    padding: 0 5px;
     background-image: url('images/pattern.png');
 }
 .banner h3 {
@@ -467,7 +470,7 @@ section a {
 
 #education {
     background-color: #e8e6e7;
-    padding: 80px 0;
+    padding: 80px 5px;
 }
 
 .back-card {
@@ -500,7 +503,7 @@ section a {
 .edu-list p {
     font-size: 18px;
     padding-left: 5px;
-    display: inline-block;
+    display: inline;
 }
 
 #gallery {
@@ -586,14 +589,7 @@ section a {
     padding-bottom: 0px;
 }
 .quote {
-    z-index: 1;
-    margin: auto;
-    width: 119px;
-    border: 2px solid #fe6601;
-    position: absolute;
-    top: 30px;
-    left: 90%;
-    padding: 8px;
+    display: none;
 }
 #meet .quote img {
     width: 32px;
@@ -829,8 +825,25 @@ footer span {
     margin-bottom: 30px;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 475px) {
 
+    .quote {
+        display: inline-block;
+        z-index: 1;
+        margin: auto;
+        width: 119px;
+        border: 2px solid #fe6601;
+        position: absolute;
+        top: 30px;
+        left: 90%;
+        padding: 8px;
+
+    }
+
+}
+
+
+@media screen and (min-width: 780px) {
     .input-right {
         padding: 15px 0 15px 15px;
     }
