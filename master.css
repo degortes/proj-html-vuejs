@@ -126,7 +126,7 @@ header p {
 }
 
 .left-cont {
-    padding: 200px 0 330px 0;
+    padding: 130px 0 400px 0;
  }
 .right-cont {
     padding: 240px 0;
@@ -218,7 +218,7 @@ header p {
 }
 
 #welcome-to .round-card {
-    padding: 10px;
+    padding: 12px;
 }
 
 .img-welcome {
@@ -494,7 +494,9 @@ section a {
 }
 
 .photos>li> img {
-    height: 270px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
 }
 
 .plus {
@@ -519,7 +521,7 @@ section a {
     opacity: 5;
 }
 #meet ul {
-    min-height: 386px;
+    min-height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -547,7 +549,7 @@ section a {
 }
 .photos p {
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 0px;
 }
 .quote {
     z-index: 1;
@@ -556,7 +558,7 @@ section a {
     border: 2px solid #fe6601;
     position: absolute;
     top: 30px;
-    left: 83%;
+    left: 90%;
     padding: 8px;
 }
 #meet .quote img {
