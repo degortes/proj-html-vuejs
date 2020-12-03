@@ -422,6 +422,7 @@ section a {
 }
 
 .card-dark h4+ p {
+    padding-top: 8px;
     padding-bottom: 60px;
 }
 
@@ -430,8 +431,7 @@ section a {
 }
 
 .separation {
-    opacity: 0.7;
-    border-left: 1px solid white;
+    border-left: 1px solid rgba(255,255,255,0.7);
 }
 
 .img-class img {
@@ -454,7 +454,7 @@ section a {
 
 #our-classes h4 {
     font-size: 20px;
-    opacity: 1;
+    opacity: 0.9;
     margin: 0;
 }
 
@@ -488,7 +488,7 @@ section a {
     background-color: white;
 }
 #education h4 {
-    color: #4c4a9b;
+    margin: 14px 0;
 }
 
 #education .small-para p {
