@@ -16,6 +16,7 @@ p {
     font-size: 18px;
 }
 a {
+    cursor: pointer;
     text-decoration: none;
     color: white;
 }
@@ -70,7 +71,9 @@ header ul li {
 header li img {
     margin-bottom: 10px;
 }
-
+nav li {
+    cursor: pointer;
+}
 
 header li:hover img {
     object-position: 0 -32px;
@@ -389,6 +392,7 @@ section a {
     color: white;
 }
 .card-dark h4, .card-dark p {
+    opacity: 0.8;
     color: white;
 }
 
@@ -401,6 +405,7 @@ section a {
 }
 
 .separation {
+    opacity: 0.7;
     border-left: 1px solid white;
 }
 
@@ -423,7 +428,13 @@ section a {
 }
 
 #our-classes h4 {
+    font-size: 20px;
+    opacity: 1;
     margin: 0;
+}
+
+#our-classes h5 {
+    opacity: 0.7;
 }
 .class-title {
     padding-bottom: 80px;
@@ -488,6 +499,7 @@ section a {
 .photos:hover .plus {
     opacity: 5;
 }
+
 #gallery>div:hover .plus{
     opacity: 5;
 
@@ -521,7 +533,7 @@ section a {
     opacity: 5;
 }
 #meet ul {
-    min-height: 380px;
+    min-height: 360px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

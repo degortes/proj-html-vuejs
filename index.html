@@ -120,20 +120,16 @@
                     </div>
                     <div class="col-6 text-center">
                         <div class="col-12 main-img-overview relative">
-                            <img src="images/gallery_01-690x506.jpg" alt="">
+                            <img :src="'images/'+ overSlide[myIndex] +'.jpg'" alt="">
                             <div class="slider-buttons">
-                                <a class="f-left" href="#"><img src="images/slider_previous.png" alt=""> </a>
-                                <a class="f-right" href="#"><img src="images/slider_next.png" alt=""> </a>
+                                <a class="f-left" @click="prev"><img src="images/slider_previous.png" alt=""> </a>
+                                <a class="f-right" @click="next"><img src="images/slider_next.png" alt=""> </a>
                             </div>
                         </div>
-                        <div class="col-4 img-overview">
-                            <img src="images/gallery_07-690x506.jpg" alt="">
-                        </div>
-                        <div class="col-4 img-overview active">
-                            <img src="images/gallery_01-690x506.jpg" alt="">
-                        </div>
-                        <div class="col-4 img-overview">
-                            <img src="images/gallery_08-690x506.jpg" alt="">
+                        <div class="col-12">
+                            <div v-for="(img,index) in overSlide" :class="myIndex==index? 'active' : null" class="col-4 img-overview">
+                                <img @click="myIndex=index" :src="'images/'+ img +'.jpg'" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,11 +148,7 @@
                         </li>
                     </ul>
                     <div class="col-12 text-center right-learn">
-                        <button class="minibut bwhite last" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
+                        <button v-for="(item,index) in 5" :class="index==1? 'last' : null" class="minibut bwhite" type="button" name="button"></button>
                     </div>
                 </div>
             </section>
@@ -309,15 +301,9 @@
                         <h3>Fable Kindergarten is a great place for my daughter to start her schooling experience. It’s welcoming and safe and my daughter loves being there.</h3>
                         <hr>
                         <p>Joe R. Hamblen</p>
-
                     </div>
-                    <div class="col-12 text-center">
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite last" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
-                        <button class=" minibut bwhite" type="button" name="button"></button>
+                    <div  class="col-12 text-center" >
+                        <button  v-for="(i,index) in 6" :class="i == 4? 'last': null" class="minibut bwhite" type="button" name="button"></button>
                     </div>
 
                 </div>

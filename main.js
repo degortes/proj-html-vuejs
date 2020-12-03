@@ -2,6 +2,8 @@
 var app = new Vue ({
     el: '#root',
     data: {
+        overSlide: ['gallery_07-690x506','gallery_01-690x506','gallery_08-690x506'],
+        myIndex: 0,
         myNumbers: [
             {
                 num: '507',
@@ -256,6 +258,26 @@ var app = new Vue ({
             }
         ],
         lowFoot: ['behance', 'dribbble','envato','facebook','twitter']
+    },
+    methods: {
+        next() {
+            this.myIndex++;
+            if (this.myIndex == this.overSlide.length ) {
+                this.myIndex = 0;
+            }
+        },
+        prev() {
+            this.myIndex--;
+            if (this.myIndex < 0  ) {
+                this.myIndex = this.overSlide.length-1;
+            }
+        },
+
+
+    },
+    mounted() {
+        setInterval(this.next , 3000  );
     }
+
 
 });
