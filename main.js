@@ -2,6 +2,7 @@
 var app = new Vue ({
     el: '#root',
     data: {
+        menuhide: true,
         overSlide: ['gallery_07-690x506','gallery_01-690x506','gallery_08-690x506'],
         myIndex: 0,
         myNumbers: [
@@ -272,6 +273,10 @@ var app = new Vue ({
                 this.myIndex = this.overSlide.length-1;
             }
         },
+        menu() {
+            this.menuhide = !this.menuhide;
+        }
+
 
 
     },

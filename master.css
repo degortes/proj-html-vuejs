@@ -63,6 +63,30 @@ h4 {
 .menu-item {
     float: right;
 }
+
+nav {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+}
+
+.hamburger .active {
+    padding: 0 30px;
+    height: 100px;
+    line-height: 160px;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+nav.active {
+    display: block;
+}
+
 header ul li {
     float: left;
     padding: 5px 30px;
@@ -137,6 +161,7 @@ header p {
 
 
 .right-cont img {
+    display: none;
     position: absolute;
     top: 100%;
     left: 100%;
@@ -186,7 +211,7 @@ header p {
 .banner h3 {
     font-weight: 300;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     padding: 50px 0;
 }
 .right-learn {
@@ -644,7 +669,6 @@ section a {
 
 .new-card div p {
     opacity: 0.7;
-    margin-left: 10px;
     display: inline-block;
 }
 .low-new {
@@ -668,6 +692,8 @@ section a {
 
 #map img {
     width: 100%;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 #contact h4 {
@@ -697,12 +723,10 @@ p.active {
 .input-left {
     padding: 15px 15px 15px 0;
 }
-.input-right {
-    padding: 15px 0 15px 15px;
-}
 .area textarea {
-    height: 187px;
-}
+    width: calc(100% - 15px);
+    padding: 15px;
+    height: 187px;}
 #contact a {
     min-width: 120px;
 }
@@ -748,8 +772,8 @@ footer h4 {
 footer h5 {
     opacity: 0.8;
     font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    line-height: 2;
+    margin-bottom: 10px;
 }
 footer .tables {
     text-transform: uppercase;
@@ -806,4 +830,26 @@ footer span {
 .theend {
     border-bottom: 1px solid black;
     margin-bottom: 30px;
+}
+
+@media screen and (min-width: 780px) {
+
+    .input-right {
+        padding: 15px 0 15px 15px;
+    }
+
+    nav {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .right-cont img {
+        display: inline-block;
+    }
+    .banner h3 {
+        font-size: 30px;
+    }
 }

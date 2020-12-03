@@ -21,7 +21,16 @@
                     <div class="logo  col-3">
                         <img src="images/logo.png" alt="">
                     </div>
-                    <nav class="menu-item">
+                    <div class="hamburger f-right">
+                        <div @click="menu" :class="menuhide? 'active' : 'hide'">
+                            <img src="images/menu_icon.png" alt="">
+                        </div>
+                        <div @click="menu" :class="menuhide? 'hide': 'active'">
+                            close
+                        </div>
+
+                    </div>
+                    <nav :class="menuhide? null : 'active'" class="menu-item">
                         <ul>
                             <li v-for="(item,index) in navMenu" :class="index==0? 'active' : null"class="text-center">
                                 <div class="nav-img">
@@ -69,7 +78,7 @@
                         <p>Fable daycare, preschool and kinderganten</p>
                         <img src="images/header_divider.png" alt="">
                     </div>
-                    <ul v-for="(item, index) in welcome"class="col-3 text-center round-card">
+                    <ul v-for="(item, index) in welcome"class="col-12 col-md-3  text-center round-card">
                         <li class="img-welcome" :class="index%2? 'dark' : null">
                             <img :src="'images/'+ item.img +'.png'" alt="">
                         </li>
@@ -84,7 +93,7 @@
             </section>
             <section id="overview">
                 <div class="container">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6 ">
                         <div class="col-12">
                             <a class="relative" href="#">
                                 <span class="arrow-down"></span>
@@ -118,7 +127,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 text-center">
+                    <div class="col-12 col-md-6 text-center">
                         <div class="col-12 main-img-overview relative">
                             <img :src="'images/'+ overSlide[myIndex] +'.jpg'" alt="">
                             <div class="slider-buttons">
@@ -136,7 +145,7 @@
             </section>
             <section id="our-numbers">
                 <div class="container text-center">
-                    <ul class="col-3" v-for="item in myNumbers">
+                    <ul class="col-12 col-md-3" v-for="item in myNumbers">
                         <li class="number-cont">
                             <span>{{item.num}}</span>
                         </li>
@@ -160,15 +169,15 @@
                         <img src="images/header_divider.png" alt="">
                     </div>
                     <div class="col-12 title-class">
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <p class="big-para">We provided four classes with nine to twenty children each aged twelve month to five years of age.</p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col-12">
                             <p class="small-para">Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.</p>
                         </div>
                     </div>
                     <div class="col-12 card-container title-class">
-                        <div v-for="item in classes" class="col-6 card-dark">
+                        <div v-for="item in classes" class="col-md-6 col-12 card-dark">
                             <div class="col-6 back-card">
                                 <h4>{{item.name}}</h4>
                                 <p>{{item.class}}</p>
@@ -195,7 +204,7 @@
             </section>
             <section id="education">
                 <div class="container">
-                    <div class="col-6">
+                    <div class="col-md-6 col-12">
                         <div class="col-12 big-para">
                             <h3>We have been educating children for over fifteen years. Our goal is to create a place that engages each child.</h3>
                         </div>
@@ -209,8 +218,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <ul v-for="item in education[0].card"class="col-6 text-center padding20 ">
+                    <div class="col-12 col-md-6">
+                        <ul v-for="item in education[0].card"class="col-12 col-md-6 text-center padding20 ">
                             <li class="padding20 edu-logo">
                                 <img :src="'images/'+ item.img +'.png'" alt="">
                             </li>
@@ -225,7 +234,7 @@
                 </div>
             </section>
             <section id="gallery">
-                <div v-for="item in gallery"class="col-3 relative">
+                <div v-for="item in gallery"class="col-12 col-md-3 relative">
                     <img :src="'images/'+item+'.jpg'" alt="">
                     <div class="plus">
                         <img src="images/image_overlay.png" alt="">
@@ -253,14 +262,14 @@
 
                     </div>
                     <div class="col-12">
-                        <div class="col-6 big-para">
+                        <div class="col-12 col-md-6 big-para">
                             <h3>Our staff consists of three teachers and one assistant with experience in early childhood care.</h3>
                         </div>
-                        <div class="col-6 small-para">
+                        <div class="col-12 col-md-6 small-para">
                             <p>Praesent arcu gravida vehicula est node maecenas loareet morbi a dosis luctus. Urna eget lacinia eleifend praesent luctus a arcu quis facilisis venenatis. Aenean interdum, nibh vitae sodales, magna ante feugiat elit maecenas.</p>
                         </div>
                     </div>
-                    <div v-for="(item, index) in meet"class="col-6 know-card">
+                    <div v-for="(item, index) in meet"class="col-12 col-md-6 know-card">
                         <ul class="col-6 photos text-center">
                             <li class="relative">
                                 <img :src="'images/'+item.img +'.jpg'" alt="">
@@ -315,7 +324,7 @@
                         <p>Keep up to date with the latest news</p>
                         <img class="breaks" src="images/header_divider.png" alt="">
                     </div>
-                    <div v-for="item in newWh" class="col-4 new-card">
+                    <div v-for="item in newWh" class="col-12 col-md-4 new-card">
                         <ul>
                             <li class="know-card">
                                 <p>{{item.date}}</p>
@@ -362,7 +371,7 @@
                         <p>Our postal address and contact details</p>
                         <img src="images/header_divider.png" alt="">
                     </div>
-                    <ul  v-for="item in contact"class="col-3 text-center padding20 ">
+                    <ul  v-for="item in contact"class="col-12 col-md-3 text-center padding20 ">
                         <li class="padding20 edu-logo">
                             <img :src="'images/'+ item.img+ '.png'" alt="">
                         </li>
@@ -376,7 +385,7 @@
                         </li>
                     </ul>
                     <div class="col-12 padding20">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="col-12 input-left relative">
                                 <input class="col-12" placeholder="Your Name *"type="text"name="" value="">
                                 <img src="images/image.png" alt="">
@@ -389,7 +398,7 @@
                             </div>
 
                         </div>
-                        <div class="col-6 input-right area">
+                        <div class="col-12 col-md-6 input-right area">
                             <textarea class="input-right"name="name" placeholder="Your Message *"rows="8" cols="80"></textarea>
                         </div>
 
@@ -402,7 +411,7 @@
             </section>
             <footer class="banner">
                 <div class="container">
-                    <div class="col-3 padding20">
+                    <div class="col-12 col-md-6 col-lg-3 padding20">
                         <ul>
                             <li>
                                 <h4>About Us</h4>
@@ -419,7 +428,7 @@
 
                         </ul>
                     </div>
-                    <ul class="col-3 padding20">
+                    <ul class="col-12 col-md-6 col-lg-3 padding20">
                         <li>
                             <h4>Archives</h4>
                         </li>
@@ -432,7 +441,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="col-3 padding20">
+                    <ul class="col-12 col-md-6 col-lg-3 padding20">
                         <li>
                             <h4>Our Features</h4>
                         </li>
@@ -451,7 +460,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="col-3 padding20">
+                    <ul class="col-12 col-md-6 col-lg-3 padding20">
                         <li>
                             <h4>Recent post</h4>
                         </li>
