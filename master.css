@@ -278,7 +278,7 @@ section a {
     height: 60px;
     background-color: #fe6601;
 }
-.btn-opac:hover {
+#overview .cta a:hover {
     background-color: #fe6601;
     color: white;
 }
@@ -305,6 +305,11 @@ section a {
     width: 80px;
     height: 80px;
     background-color: #fe6601;
+}
+
+.icon-overview.alternate {
+    background-color: transparent;
+    border: 1px solid #fe6601;
 }
 .img-overview {
     padding: 0 5px;
@@ -341,6 +346,14 @@ section a {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.arrow-down.opac {
+    border-top: 10px solid  transparent;
+}
+.btn-opac:hover .arrow-down.opac {
+    border-top: 10px solid #fe6601;
+    color: white;
 }
 
 #overview h4 {
@@ -840,7 +853,7 @@ section a:hover {
 }
 
 section a:hover .arrow-down {
-    border-top: 10px solid #4c4a9b;
+    border-top: 10px solid #fe6601;
 
 }
 

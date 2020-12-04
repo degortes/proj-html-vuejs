@@ -4,6 +4,39 @@ var app = new Vue ({
     data: {
         timing: 50,
         menuhide: true,
+        overPara: {
+            clicked: false,
+            overText:'Our philosophy is learning through play as we offer a stimulating environment for children.',
+            overView: [
+                {
+                icon: 'clock_alt',
+                title: 'Full Day Sessions',
+                text: 'Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.'
+                },
+                {
+                icon: 'diagram_alt',
+                title: 'Varied Classes',
+                text: 'Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.'
+                }
+            ],
+            ourMission: [
+                {
+                icon: 'screen',
+                title: 'Online Access',
+                text: 'Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.'
+                },
+                {
+                icon: 'heart',
+                title: 'Maecenas Node',
+                text: 'Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.'
+                },
+                {
+                icon: 'lab (1)',
+                title: 'Praesent Morbi',
+                text: 'Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.'
+                }
+            ]
+        },
         overSlide: ['gallery_07-690x506','gallery_01-690x506','gallery_08-690x506'],
         myIndex: 0,
         myNumbers: [
@@ -289,7 +322,17 @@ var app = new Vue ({
                     item.init++;
                 }
             });
-        }
+        },
+        overChange() {
+            if (this.overPara.clicked) {
+                this.overPara.clicked = false;
+            }
+        },
+        missionChange() {
+            if (!this.overPara.clicked) {
+                this.overPara.clicked = true;
+            }
+        },
     },
     mounted() {
         setInterval(this.next , 3000);
