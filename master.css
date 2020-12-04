@@ -154,10 +154,10 @@ header p {
 .right-cont, .left-cont {
     position: relative;
 }
-
 .left-cont {
-    padding: 130px 0 400px 0;
- }
+    padding: 130px 0 350px 0;
+}
+
 .right-cont {
     padding: 240px 0;
  }
@@ -271,7 +271,7 @@ header p {
 }
 
 section a {
-    width: 140px;
+    width: 131px;
     line-height: 60px;
     text-align: center;
     display: inline-block;
@@ -871,6 +871,13 @@ section a:hover .arrow-down {
     background-color: #cac2c2;
 }
 
+@media screen and (min-width: 415px) {
+    .left-cont {
+        padding: 130px 0 400px 0;
+     }
+
+
+}
 @media screen and (min-width: 475px) {
 
     .photos p {
