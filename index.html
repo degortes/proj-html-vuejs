@@ -126,16 +126,6 @@
 
                             </div>
                         </div>
-                        <!-- <div class="col-12 new-card">
-                            <div class="icon-overview col-3">
-                                <img src="images/diagram_alt.png" alt="">
-                            </div>
-                            <div class="col-9">
-                                <h4>Varied Classes</h4>
-                                <p>Pulvinar est metro ligula blandit maecenas retrum gravida cuprum. Maecenas node estibulum.</p>
-
-                            </div>
-                        </div> -->
                     </div>
                     <div class="col-12 col-md-6 text-center">
                         <div class="col-12 main-img-overview relative">
@@ -189,7 +179,7 @@
                     </div>
                     <div class="col-12 card-container title-class">
                         <div v-for="item in classes" class="col-md-6 col-12 card-dark">
-                            <div class="col-6 back-card">
+                            <div class="col-12 col-md-6 back-card">
                                 <h4>{{item.name}}</h4>
                                 <p>{{item.class}}</p>
                                 <div class="col-6 text-center">
@@ -201,7 +191,7 @@
                                     <p>{{item.term}}</p>
                                 </div>
                             </div>
-                            <div class="col-6 text-right">
+                            <div class="col-12 col-md-6 text-right">
                                 <div class="img-class relative">
                                     <img :src="'images/class'+item.img+'-690x506.jpg'" alt="">
                                     <a class="">Read More

@@ -125,7 +125,7 @@ header li.active p {
 }
 
 header li.active img {
-    object-position: 0 -32px;
+    object-position: 0 -33px;
 }
 
 header p {
@@ -309,7 +309,7 @@ section a {
 
 .icon-overview.alternate {
     background-color: transparent;
-    border: 1px solid #fe6601;
+    border: 2px solid #fe6601;
 }
 .img-overview {
     padding: 0 5px;
@@ -600,7 +600,8 @@ section a {
 .photos h4 {
     font-size: 20px;
 }
-.photos p {
+.photos + ul li p {
+    font-size: 15px;
     margin-bottom: 10px;
     padding-bottom: 0px;
 }
@@ -609,6 +610,7 @@ section a {
     padding-bottom: 10px;
 
 }
+
 
 
 .quote {
@@ -870,6 +872,10 @@ section a:hover .arrow-down {
 }
 
 @media screen and (min-width: 475px) {
+
+    .photos p {
+        font-size: 18px;
+    }
 
     .quote {
         display: inline-block;

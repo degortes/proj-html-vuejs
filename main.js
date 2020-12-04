@@ -41,13 +41,13 @@ var app = new Vue ({
         myIndex: 0,
         myNumbers: [
             {
-                init: 0,
+                init: 300,
                 num: 507,
                 title: 'Our Pupils',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
             },
             {
-                init: 0,
+                init: 100,
                 num: 235,
                 title: 'Teaching Hours',
                 content:'Elipsis morbi nulla a metro interdum vitae elite.',
@@ -60,7 +60,7 @@ var app = new Vue ({
                 content:'Elementum pulvinar detos diaspis movum blandit.',
             },
             {
-                init: 0,
+                init: 750,
                 num: 1050,
                 title: 'Meals Per Year',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
