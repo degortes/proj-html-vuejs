@@ -2,27 +2,33 @@
 var app = new Vue ({
     el: '#root',
     data: {
+        timing: 50,
         menuhide: true,
         overSlide: ['gallery_07-690x506','gallery_01-690x506','gallery_08-690x506'],
         myIndex: 0,
         myNumbers: [
             {
-                num: '507',
+                init: 0,
+                num: 507,
                 title: 'Our Pupils',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
             },
             {
-                num: '235',
+                init: 0,
+                num: 235,
                 title: 'Teaching Hours',
                 content:'Elipsis morbi nulla a metro interdum vitae elite.',
             },
             {
-                num: '100%',
+                init: 0,
+                num: 100,
+                percent: '%',
                 title: 'Satisfied Parents',
                 content:'Elementum pulvinar detos diaspis movum blandit.',
             },
             {
-                num: '1050',
+                init: 0,
+                num: 1050,
                 title: 'Meals Per Year',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
             }
@@ -275,13 +281,19 @@ var app = new Vue ({
         },
         menu() {
             this.menuhide = !this.menuhide;
+        },
+        counter() {
+
+            this.myNumbers.forEach((item, i) => {
+                if (item.init < item.num) {
+                    item.init++;
+                }
+            });
         }
-
-
-
     },
     mounted() {
-        setInterval(this.next , 3000  );
+        setInterval(this.next , 3000);
+        setInterval(this.counter , 30);
     }
 
 

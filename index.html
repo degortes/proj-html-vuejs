@@ -147,7 +147,8 @@
                 <div class="container text-center">
                     <ul class="col-12 col-md-3" v-for="item in myNumbers">
                         <li class="number-cont">
-                            <span>{{item.num}}</span>
+                            <span>{{item.init}}</span>
+                            <span v-if="item.percent">{{item.percent}}</span>
                         </li>
                         <li>
                             <h4>{{item.title}}</h4>
@@ -486,13 +487,16 @@
                     </ul>
                 </div>
             </footer>
-            <div class="col-12 foot-btn text-center">
+            <section class="col-12 foot-btn text-center">
                 <a v-for="item in lowFoot"href="#">
                     <img :src="'images/'+item+'.png'" alt="">
                 </a>
-            </div>
+            </section>
             <div class="text-center padding20 theend">
                 © Fable - Children Kindergarten WordPress Theme by QuanticaLabs
+            </div>
+            <div class="fixed-button">
+                <a href="#" id="upper-btn"><img src="images/go_to_top.png" alt=""> </a>
             </div>
         </div>
         <script src="main.js" charset="utf-8"></script>

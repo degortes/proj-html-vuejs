@@ -278,7 +278,10 @@ section a {
     height: 60px;
     background-color: #fe6601;
 }
-
+.btn-opac:hover {
+    background-color: #fe6601;
+    color: white;
+}
 .btn-opac {
     margin-left: 10px;
     background-color: transparent;
@@ -830,6 +833,27 @@ footer span {
 .theend {
     border-bottom: 1px solid black;
     margin-bottom: 30px;
+}
+
+section a:hover {
+    background-color: #4c4a9b;
+}
+
+section a:hover .arrow-down {
+    border-top: 10px solid #4c4a9b;
+
+}
+
+#upper-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #cac2c2;
 }
 
 @media screen and (min-width: 475px) {
