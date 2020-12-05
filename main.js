@@ -41,13 +41,13 @@ var app = new Vue ({
         myIndex: 0,
         myNumbers: [
             {
-                init: 182,
+                init: 0,
                 num: 507,
                 title: 'Our Pupils',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
             },
             {
-                init: 86,
+                init: 0,
                 num: 235,
                 title: 'Teaching Hours',
                 content:'Elipsis morbi nulla a metro interdum vitae elite.',
@@ -60,7 +60,7 @@ var app = new Vue ({
                 content:'Elementum pulvinar detos diaspis movum blandit.',
             },
             {
-                init: 666,
+                init: 0,
                 num: 1050,
                 title: 'Meals Per Year',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
@@ -319,7 +319,10 @@ var app = new Vue ({
 
             this.myNumbers.forEach((item, i) => {
                 if (item.init < item.num) {
-                    item.init++;
+                    item.init = item.init + parseInt(item.num/100);
+                }
+                if (item.init > item.num ) {
+                    item.init = item.num;
                 }
             });
         },

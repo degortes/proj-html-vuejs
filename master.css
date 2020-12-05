@@ -393,7 +393,7 @@ section a {
 
 @keyframes fadeoff {
     0% {position: relative; left: 0%}
-    100% {position: relative; left: -150%}
+    100% {position: relative; left: -180%}
 }
 
 @keyframes fadein {
