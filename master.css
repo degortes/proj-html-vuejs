@@ -289,6 +289,7 @@ section a {
     color: #707070;
 }
 #overview h3 {
+    display: inline-block;
     margin-top: 50px;
     color: #4c4a9b;
     font-size: 35px;
@@ -374,6 +375,39 @@ section a {
     position: relative;
 }
 
+/* animation */
+.moving {
+    animation-timing-function: linear;
+    animation: fadeoff;
+    animation-iteration-count: 1;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+.start-move {
+    animation-timing-function: linear;
+    animation: fadein;
+    animation-iteration-count: 1;
+    animation-duration: 0.4s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeoff {
+    0% {position: relative; left: 0%}
+    100% {position: relative; left: -150%}
+}
+
+@keyframes fadein {
+    0% {position: relative; left: 100%}
+    100% {position: relative; left: 0%}
+}
+
+
+
+
+
+
+
+/* animation end */
 
 #our-numbers {
     padding-top: 80px;
@@ -860,6 +894,7 @@ section a:hover .arrow-down {
     right: 20px;
     background-color: #cac2c2;
 }
+
 
 @media screen and (min-width: 415px) {
     .left-cont {

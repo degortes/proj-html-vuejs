@@ -95,28 +95,27 @@
                 <div class="container">
                     <div class="col-12 col-md-6 ">
                         <div class="col-12 cta">
-                            <a @click="overChange()" :class="overPara.clicked? 'btn-opac': null " class="relative">
-                                <span :class="overPara.clicked? 'opac': null " class="arrow-down"></span>
+                            <a @click="overChange()" :class="overPara.animation? 'btn-opac': null " class="relative">
+                                <span :class="overPara.animation? 'opac': null " class="arrow-down"></span>
                                 Overview
                             </a>
-                            <a @click="missionChange()" :class="!overPara.clicked? 'btn-opac': null "class=" relative"><span :class="!overPara.clicked? 'opac': null "class="arrow-down"></span>Our Mission</a>
+                            <a @click="missionChange()" :class="!overPara.animation? 'btn-opac': null "class=" relative"><span :class="!overPara.animation? 'opac': null "class="arrow-down"></span>Our Mission</a>
                         </div>
                         <div  class="col-12 big-para">
-                            <h3 v-if="!overPara.clicked">
+                            <h3 :class="overPara.animation? 'moving': 'start-move'" v-if="!overPara.clicked" >
                                 {{overPara.overText}}
                             </h3>
                         </div>
-                        <div v-if="!overPara.clicked" v-for="item in overPara.overView"class="col-12 new-card">
+                        <div :class="overPara.animation? 'moving' : 'start-move'" v-if="!overPara.clicked" v-for="item in overPara.overView"class="col-12 new-card">
                             <div class="icon-overview col-3">
                                 <img :src="'images/'+item.icon+'.png'" alt="">
                             </div>
                             <div class="col-9">
                                 <h4>{{item.title}}</h4>
                                 <p>{{item.text}}</p>
-
                             </div>
                         </div>
-                        <div v-if="overPara.clicked" v-for="item in overPara.ourMission"class="col-12 new-card">
+                        <div :class="!overPara.animation? 'moving' : 'start-move'" v-if="overPara.clicked" v-for="item in overPara.ourMission"class="col-12 new-card">
                             <div class="icon-overview alternate col-3">
                                 <img :src="'images/'+item.icon+'.png'" alt="">
                             </div>

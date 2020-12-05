@@ -2,9 +2,9 @@
 var app = new Vue ({
     el: '#root',
     data: {
-        timing: 50,
         menuhide: true,
         overPara: {
+            animation: false,
             clicked: false,
             overText:'Our philosophy is learning through play as we offer a stimulating environment for children.',
             overView: [
@@ -41,13 +41,13 @@ var app = new Vue ({
         myIndex: 0,
         myNumbers: [
             {
-                init: 300,
+                init: 182,
                 num: 507,
                 title: 'Our Pupils',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
             },
             {
-                init: 100,
+                init: 86,
                 num: 235,
                 title: 'Teaching Hours',
                 content:'Elipsis morbi nulla a metro interdum vitae elite.',
@@ -60,7 +60,7 @@ var app = new Vue ({
                 content:'Elementum pulvinar detos diaspis movum blandit.',
             },
             {
-                init: 750,
+                init: 666,
                 num: 1050,
                 title: 'Meals Per Year',
                 content:'Pulvinar forte maestro node terminal est elipsis prism.',
@@ -325,18 +325,27 @@ var app = new Vue ({
         },
         overChange() {
             if (this.overPara.clicked) {
-                this.overPara.clicked = false;
+                let self = this;
+
+                this.overPara.animation = false;
+                setTimeout( function() {
+                    self.overPara.clicked = false;
+                } ,500)
             }
         },
         missionChange() {
             if (!this.overPara.clicked) {
-                this.overPara.clicked = true;
+                let self = this;
+                this.overPara.animation = true;
+                setTimeout( function() {
+                    self.overPara.clicked = true;
+                } ,500)
             }
-        },
+        }
     },
     mounted() {
         setInterval(this.next , 3000);
-        setInterval(this.counter , 30);
+        setInterval(this.counter , 50);
     }
 
 
